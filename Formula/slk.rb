@@ -5,21 +5,21 @@
 class Slk < Formula
   desc "A blazingly fast, keyboard-driven Slack TUI"
   homepage "https://github.com/gammons/slk"
-  version "0.8.2"
+  version "0.8.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gammons/slk/releases/download/v0.8.2/slk_0.8.2_darwin_x86_64.tar.gz"
-      sha256 "34e58cdaaab190718338b0a7bade09e975095708a0b600d11b02cf4e481067a4"
+      url "https://github.com/gammons/slk/releases/download/v0.8.3/slk_0.8.3_darwin_x86_64.tar.gz"
+      sha256 "2d14345acdeb172c441118ca2610eb3b2f6ac7a6ab07851e39e04ecfcfaa4ffe"
 
       define_method(:install) do
         bin.install "slk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gammons/slk/releases/download/v0.8.2/slk_0.8.2_darwin_arm64.tar.gz"
-      sha256 "4e573a68450ea09c1558f57c10d8424d7ba400f358f1af3339c387911e5831dc"
+      url "https://github.com/gammons/slk/releases/download/v0.8.3/slk_0.8.3_darwin_arm64.tar.gz"
+      sha256 "7cbd8b61d70746a54bac35edca5c3d466b5843079cf64020fd98ccbb86806816"
 
       define_method(:install) do
         bin.install "slk"
@@ -29,15 +29,15 @@ class Slk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gammons/slk/releases/download/v0.8.2/slk_0.8.2_linux_x86_64.tar.gz"
-      sha256 "086d10c93417927963e6155385e39200098ac5044a627aa1584ee82ad2666240"
+      url "https://github.com/gammons/slk/releases/download/v0.8.3/slk_0.8.3_linux_x86_64.tar.gz"
+      sha256 "6d92e18aa16765258a548e336308013679a63de9914ee20ca55aafdba0eb659c"
       define_method(:install) do
         bin.install "slk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gammons/slk/releases/download/v0.8.2/slk_0.8.2_linux_arm64.tar.gz"
-      sha256 "d533e316bf474817e381325a34c5efd19fd62a147c69a73d05f2e4593927f386"
+      url "https://github.com/gammons/slk/releases/download/v0.8.3/slk_0.8.3_linux_arm64.tar.gz"
+      sha256 "97c13c9f044341996c27f820163887d4a266840d5b56cc1fe949c5474376d11f"
       define_method(:install) do
         bin.install "slk"
       end
